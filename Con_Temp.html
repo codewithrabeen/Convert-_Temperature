@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert To Farhenheit celsius</title>
+  </head>
+  <boady>
+    <script>
+      function convertToFarenheit(celsius) {
+        console.log( (celsius*9/5) +32 );
+      }
+      convertToFarenheit(25);
+
+
+      function convertToCelsius(Farhenheit) {
+        let convertToCelsius=(Farhenheit - 32)*5/9;
+      }
+      convertToCelsius(86);
+
+
+      function convertTemperature(degree,unit) {
+        if (unit ===  'c') {
+          console.log((degree*9/5)+ 32 +' f');
+        } else if (unit=== 'f' ) {
+          console.log((degree-32)*5/9 + ' c')
+        } else {
+          console.log(
+            'Invalid!, Please enter valid degree and unit'
+          )
+        }
+
+      }
+
+      convertTemperature(60,'c');
+    </script>
+  </boady>
+
+</html>
